@@ -1,5 +1,5 @@
 class Artist
-    attr_accessor :name
+    attr_accessor :name, :genre
 
     def self.all
       @@all
@@ -9,6 +9,7 @@ class Artist
 
   def initialize(name)
     @name = name
+    @genre = genre
     @@all << self
   end
 
