@@ -11,13 +11,8 @@ class Artist
   def initialize(name)
     @name = name
     @songs = []
-    @genre = []
+    @genres = []
     @@all << self
-  end
-
-  def songs(song)
-      @songs << song
-      song.artist = self
   end
 
   def song(song)
