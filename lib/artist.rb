@@ -12,4 +12,9 @@ class Artist
     @@all
   end
 
+  def songs(song)
+    self.songs << songs
+  end
+    
+
 end
