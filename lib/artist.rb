@@ -1,19 +1,19 @@
 class Artist
 
   @@all = []
-  #
+
   def self.all
     @@all
   end
-  #
+
   attr_accessor :name
-  #
+
   def initialize(name)
     @name = name
     @genres = []
-    @@all <<s elf
+    @@all = self
   end
-  #
+
   def new_song(name, genre)
     song = Song.new(name, self, genre)
     genre.artists << self
