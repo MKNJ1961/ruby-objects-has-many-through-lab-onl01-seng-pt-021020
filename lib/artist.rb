@@ -7,7 +7,7 @@ class Artist
       @@all
     end
 
-  def initialize(name)
+  def initialize(name, songs)
     @name = name
     @songs = []
     @@all = self
