@@ -1,7 +1,4 @@
-require'pry'
-
 class Artist
-  binding.pry
 
   @@all = []
 
