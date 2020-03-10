@@ -1,3 +1,4 @@
+
 class Artist
 
   @@all = []
@@ -14,23 +15,19 @@ class Artist
     @@all << self
   end
 
-  def songs
-    @songs
-  end
-
   def new_song(name, genre)
-    song = Song.new(name, genre, self)
+    song = Song.new(name, self, genre)
     genre.artists << self
-    genre.songs << songs
+    genre.songs << song
     song
   end
 
   def songs
-    Song.all.select{|song| song.artist == self}
+    Song.all.select{|song| song.artist == self }
   end
 
   def genres
-    Genre.all.select{|genre| genre.artist == self}
+    Genre.all.select{|genre| genre.artists.include?(self)}
   end
 
 end
