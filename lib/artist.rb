@@ -11,7 +11,7 @@ class Artist
   def initialize(name)
     @name = name
     @genres = []
-    @@all = self
+    # @@all = self
   end
   #
   # def new_song(name, genre)
