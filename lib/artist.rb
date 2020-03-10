@@ -15,6 +15,6 @@ class Artist
   def songs(song)
     self.songs << songs
   end
-    
+
 
 end
