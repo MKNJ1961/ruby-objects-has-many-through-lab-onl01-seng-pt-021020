@@ -13,6 +13,13 @@ class Artist
     @@all = self
   end
 
+  def new_song(name, genre)
+    song = Song.new(name, self, genre)
+    genre.artists << self
+    genre.songs << songs
+    song
+  end
+
 
 
   def songs
