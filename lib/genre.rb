@@ -2,8 +2,8 @@ class Genre
 
   @@all = []
 
-  def self.all 
-    @@all 
+  def self.all
+    @@all
   end
   attr_accessor :genres
 
