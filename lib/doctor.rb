@@ -1,3 +1,6 @@
+require_relative 'appointment'
+require_relative 'patient'
+
 class Doctor
 
   @@all []
