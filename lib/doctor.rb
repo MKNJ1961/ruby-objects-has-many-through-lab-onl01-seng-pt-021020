@@ -1,6 +1,6 @@
 class Doctor
 
-  @@all []
+  @@all = []
 
   def self.all
     @@all
